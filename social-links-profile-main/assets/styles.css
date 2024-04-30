@@ -11,14 +11,14 @@
     --semi-bold-font-weight: 600;
     --bold-font-weight: 700;
     /* Spacing */
-    --profileCard-width: 375px;
+    --profileCard-width: 400px;
 }
 
 /* css reset */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -56,7 +56,7 @@ body {
 
 .profileCard {
     background-color: var(--dark-grey);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 1rem;
     width: 100%;
     margin: 0 1.5rem;
@@ -73,7 +73,7 @@ body {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin: .5rem 0 2rem;
 }
 
 .profileCard__title {
@@ -104,7 +104,7 @@ body {
 
 .socialLink a {
     display: block;
-    background: #e0e0e040;
+    background: #e0e0e020;
     padding: 1rem;
     border-radius: .5rem;
     text-decoration: none;
@@ -113,7 +113,7 @@ body {
 }
 
 .socialLink a:hover {
-    background: #e0e0e080;
+    background: #e0e0e060;
 }
 
 @media screen and (max-width: 768px) {
