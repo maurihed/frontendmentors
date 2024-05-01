@@ -76,14 +76,6 @@ html, body {
 
 .faq-list-header {
     margin: 1.5rem 0;
-    /* button reset */
-    display: block;
-    width: 100%;
-    background: none;
-    border: none;
-}
-
-.faq-list-header label {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,11 +84,11 @@ html, body {
     color: var(--darkPurple);
 }
 
-.faq-list-header label:hover {
+.faq-list-header:hover {
     color: hsl(280.92deg 82.98% 53.92%);
 }
 
-.faq-list-header label::after {
+.faq-list-header::after {
     content: " ";
     display: inline-block;
     width: 32px;
@@ -105,16 +97,16 @@ html, body {
     margin-left: 1rem;
 }
 
-.faq-list-header input[type="checkbox"] {
-    display: none;
-}
-
-.faq-list-header input[type="checkbox"] + label::after {
+.faq-list-header:has(input[type="checkbox"])::after {
     background-image: url("./images/icon-plus.svg");
 }
 
-.faq-list-header input[type="checkbox"]:checked + label::after {
+.faq-list-header:has(input[type="checkbox"]:checked)::after {
     background-image: url("./images/icon-minus.svg");
+}
+
+.faq-list-header input[type="checkbox"] {
+    display: none;
 }
 
 .faq-list-content {

@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     });
 
-    __(".faq-list-header").forEach((btn) => {
-        btn.addEventListener("keydown", (e) => {
+    __(".faq-list-header").forEach((li) => {
+        li.addEventListener("keydown", (e) => {
             if ([ENTER_KEY, SPACE_KEY].includes(e.key)) {
                 e.currentTarget.querySelector('.faq-list-checkbox').click();
             }
